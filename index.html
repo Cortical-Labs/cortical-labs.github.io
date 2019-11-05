@@ -50,7 +50,7 @@
         }
 
         #logo svg {
-            width: 30vh;
+            width: 25vh;
             max-width: 80%;
         }
 
@@ -90,7 +90,7 @@
             color: #fff;
         }
 
-        #email {
+        #MERGE0 {
             display: block;
             height: 22px;
             padding: 8px;
@@ -107,12 +107,20 @@
             background: none;
             border: 0;
             outline: 3px solid #fff;
-            padding: 12px 6px;
+            padding: 12px 6px 8px;
             margin: 16px 2px;
             align-self: flex-end;
             text-transform: uppercase;
             font-family: 'Josefin Sans', sans-serif;
             font-weight: 700;
+            transition: color, outline, 0.5s;
+        }
+
+        #submit:hover {
+            color: #ccc;
+            outline: 3px solid #ccc;
+            cursor: pointer;
+            transition: color, outline, 0.5s;
         }
 
         #footer {
@@ -120,16 +128,26 @@
             flex-shrink: 1;
             text-align: center;
             justify-content: center;
+            font-size: 8pt;
             margin-bottom: 12px;
         }
 
-        @media (min-width: 680px) {
+        #footer span {
+            display: block;
+        }
+
+        #footer a {
+            color: #fff;
+        }
+
+        @media (min-width: 667px) {
             #logo {
                 flex-grow: 3;
             }
 
             #logo svg {
                 width: 50%;
+                max-width: 33vh;
             }
             
             #header {
@@ -142,9 +160,29 @@
             }
         }
 
+        @media (min-width: 667px) and (orientation: portrait) {
+            #logo {
+                flex-grow: 1;
+            }
+
+            #logo svg {
+                width: 25vh;
+            }
+
+            #banner {
+                flex-direction: column;
+            }
+
+            #header {
+                justify-content: start;
+            }
+        }
+
+        
+/* 
         @media (min-width: 992px) {}
 
-        @media (min-width: 1200px) {}
+        @media (min-width: 1200px) {} */
     </style>
 </head>
 
@@ -201,8 +239,11 @@
 
                 <div id="mc_form">
                     Subscribe for updates
-                    <form>
-                        <input id="email" type="email" placeholder="Email address" name="email">
+                    <form action="https://corticallabs.us19.list-manage.com/subscribe/post" method="POST">
+                        <input type="hidden" name="u" value="ae9059579f85a1c5bd5da0bc3">
+                        <input type="hidden" name="id" value="118bdd6321">
+
+                        <input id="MERGE0" type="email" placeholder="Email address" name="MERGE0">
                         <input id="submit" type="submit" value="Subscribe">
                     </form>
                 </div>
@@ -214,7 +255,8 @@
 
 
         <div id="footer">
-            Cortical Labs 2019
+            © 2019 CCLabs Pty Ltd
+            <span><a href="privacy.pdf">Privacy Policy</a></span>
         </div>
     </div>
 
