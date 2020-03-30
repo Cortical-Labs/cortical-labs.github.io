@@ -51,7 +51,7 @@ a {
 }
 
 a:hover {
-  color: #47C6BA;
+  color: #7ee5db;
 }
 
 figure {
@@ -1006,6 +1006,16 @@ canvas {
   background: transparent;
   border: 1px solid #252E3A;
   width: 100%;
+  transition: all 300ms ease;
+}
+
+.contact-form input:not([type=submit]):focus,
+.contact-form input:not([type=submit]):active,
+.contact-form input:not([type=submit]):hover,
+.contact-form textarea:focus,
+.contact-form textarea:active,
+.contact-form textarea:hover {
+  border-color: #47C6BA;
 }
 
 .feature-image {
@@ -1211,6 +1221,7 @@ canvas {
   -webkit-transform: translate(0px, -2px);
   -ms-transform: translate(0px, -2px);
   transform: translate(0px, -2px);
+  color: white;
 }
 
 .cta-section {
