@@ -85,7 +85,7 @@ a:hover {
   -ms-flex-align: center;
   align-items: center;
   background-image: url('../images/neurons.png'), url('../images/colorblurs.png');
-  background-position: 0% 0%;
+  background-position: right 0%;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
