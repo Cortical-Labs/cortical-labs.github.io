@@ -58,6 +58,10 @@ figure {
   padding: 160px 0;
 }
 
+canvas {
+  margin: 24px 0;
+}
+
 .white {
   color: white;
 }
