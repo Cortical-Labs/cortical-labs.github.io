@@ -847,6 +847,11 @@ canvas {
   margin-right: 12px;
 }
 
+#perfusion {
+  width: 450px;
+  height: 225px;
+}
+
 .feature {
   color: #99a1ba;
   font-size: 15px;
@@ -983,6 +988,10 @@ canvas {
   background-repeat: no-repeat;
   background-size: 20%;
   mix-blend-mode: screen;
+}
+
+.contact-section .w-layout-grid {
+  grid-row-gap: 0;
 }
 
 .form {
@@ -1534,6 +1543,23 @@ canvas {
 }
 
 @media screen and (max-width: 767px) {
+  .form, .feature-image {
+    width: 100%;
+  }
+
+  .contact-section .w-layout-grid {
+    width: 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-column-gap: 0;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+  }
+
   .pics-section {
     height: 250px;
   }
@@ -1603,6 +1629,10 @@ canvas {
 }
 
 @media screen and (max-width: 479px) {
+  #perfusion {
+    width: 300px;
+    height: 150px;
+  }
   .pics-section {
     height: 120px;
   }
