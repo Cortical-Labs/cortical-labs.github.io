@@ -13,7 +13,7 @@ renderer.setSize(canvas.clientWidth, canvas.clientHeight);
 var controls = new THREE.OrbitControls(camera, renderer.domElement);
 controls.autoRotate = true;
 controls.autoRotateSpeed = 1.6;
-camera.position.set( 0, 10, 12 );
+camera.position.set( 0, 6, 8 );
 controls.update();
 
 var ambient = new THREE.AmbientLight(0xffffff, 0.1);
