@@ -1438,12 +1438,19 @@ canvas {
 
 
 @media screen and (max-width: 1441px) {
+  .team-header {
+    min-height: 600px;
+  }
   .pics-section {
     height: 350px;
   }
 }
 
 @media screen and (max-width: 991px) {
+  .team-header {
+    min-height: 500px;
+  }
+
   .pics-section {
     height: 300px;
   }
@@ -1543,6 +1550,10 @@ canvas {
 }
 
 @media screen and (max-width: 767px) {
+  .team-header {
+    min-height: 500px;
+  }
+
   .form, .feature-image {
     width: 100%;
   }
@@ -1629,6 +1640,9 @@ canvas {
 }
 
 @media screen and (max-width: 479px) {
+  .team-header {
+    min-height: 320px;
+  }
   #perfusion {
     width: 300px;
     height: 150px;
