@@ -38,7 +38,7 @@ loader.setDRACOLoader(dracoLoader);
 
 loader.load(
 	// resource URL
-	'/js/perfusion_circuit.glb',
+	'js/perfusion_circuit.glb',
 	function (gltf) {
 
 		scene.add(gltf.scene);
