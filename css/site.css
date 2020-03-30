@@ -1046,6 +1046,10 @@ figure {
   margin-bottom: 40px;
   color: #fff;
   font-size: 17px;
+  text-transform: uppercase;
+  font-family: Josefin, sans-serif;
+  letter-spacing: 2px;
+  font-weight: 700;
 }
 
 .footer-base {
