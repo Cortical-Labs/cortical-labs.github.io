@@ -129,9 +129,7 @@ a {
   max-width: 680px;
   margin-bottom: 48px;
   color: #99a1ba;
-  font-size: 17px;
-  line-height: 1.4;
-  font-weight: 400;
+  font-size: 1.125em;
   text-align: center;
 }
 
@@ -165,8 +163,7 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 15px;
-  line-height: 1.5;
+  font-size: 0.9375em;
   transition: color 200ms ease;
 }
 
@@ -193,22 +190,21 @@ a {
   background-color: rgba(56, 152, 236, 0);
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
-  font-size: 15px;
-  line-height: 21px;
-  font-weight: 600;
+  font-size: 0.9375em;
+  line-height: 1.3125;
+  font-weight: 700;
 }
 
 .nav-button:hover {
   background-color: #fff;
-  color: #813efb;
+  color: #008F8E;
 }
 
 .overline {
   margin-top: 0px;
   margin-bottom: 16px;
-  color: #813efb;
-  font-size: 14px;
-  font-weight: 500;
+  color: #008F8E;
+  font-size: 0.875em;
   letter-spacing: 1.5px;
 }
 
@@ -223,7 +219,7 @@ a {
 }
 
 .primary-cta.focus-button {
-  background-color: #813efb;
+  background-color: #008F8E;
   color: #fff;
 }
 
@@ -246,22 +242,6 @@ a {
   top: 300px;
   right: -80px;
   bottom: 0%;
-}
-
-.profile-images-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 20px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .people-group-image {
@@ -337,7 +317,7 @@ a {
 }
 
 .services-grid-block:hover {
-  border: 1px solid #813efb;
+  border: 1px solid #008F8E;
 }
 
 .icon-block {
@@ -357,7 +337,7 @@ a {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 5px;
-  background-color: #813efb;
+  background-color: #008F8E;
 }
 
 .service-title {
@@ -572,7 +552,7 @@ a {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 100px;
-  background-color: #813efb;
+  background-color: #008F8E;
 }
 
 .white-circle {
@@ -866,7 +846,7 @@ a {
 .copyright.white {
   display: inline-block;
   color: #fff;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 
 .footer-left-block {
@@ -907,7 +887,7 @@ a {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #813efb;
+  background-color: #008F8E;
 }
 
 .footer-base-container {
@@ -971,8 +951,7 @@ a {
   max-width: 720px;
   margin-bottom: 48px;
   color: #99a1ba;
-  font-size: 18px;
-  line-height: 1.4;
+  font-size: 1.5em;
   font-weight: 400;
   text-align: center;
 }
@@ -984,20 +963,22 @@ a {
 }
 
 .hero-overline {
+  font-family: Josefin, sans-serif;
   margin-top: 0px;
-  margin-bottom: 16px;
-  color: #813efb;
-  font-size: 14px;
-  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #008F8E;
+  font-size: 0.875em;
+  font-weight: 300;
   text-align: center;
   letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .hero-button {
   margin-top: 0px;
   padding: 16px 45px;
   border-radius: 100px;
-  background-color: #813efb;
+  background-color: #008F8E;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
   color: #fff;
@@ -1055,7 +1036,7 @@ a {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 15px;
-  background-color: #813efb;
+  background-color: #008F8E;
 }
 
 .content-cta {
@@ -1106,7 +1087,7 @@ a {
 }
 
 .services-grid-block-02:hover {
-  border: 1px solid #813efb;
+  border: 1px solid #008F8E;
 }
 
 .services-grid-block-03 {
@@ -1120,7 +1101,7 @@ a {
 }
 
 .services-grid-block-03:hover {
-  border: 1px solid #813efb;
+  border: 1px solid #008F8E;
 }
 
 .services-grid-block-04 {
@@ -1134,7 +1115,7 @@ a {
 }
 
 .services-grid-block-04:hover {
-  border: 1px solid #813efb;
+  border: 1px solid #008F8E;
 }
 
 .services-grid-block-04.end-block {
@@ -1343,11 +1324,6 @@ a {
 @media screen and (max-width: 767px) {
   .header {
     padding-top: 145px;
-  }
-  .profile-images-wrapper {
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
   }
   .features-section {
     padding-top: 60px;
