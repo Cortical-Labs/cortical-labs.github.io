@@ -306,6 +306,11 @@ a {
   grid-template-rows: auto auto;
 }
 
+.services-grid a,
+.services-grid a:hover {
+  cursor: default;
+}
+
 .services-grid-block {
   padding: 50px 50px 50px 30px;
   border: 1px solid transparent;
@@ -948,18 +953,20 @@ a {
 }
 
 .hero-paragraph {
-  max-width: 720px;
   margin-bottom: 48px;
   color: #99a1ba;
   font-size: 1.5em;
   font-weight: 400;
+  max-width: 520px;
   text-align: center;
 }
 
 .hero-h1 {
   color: #fff;
-  font-size: 50px;
+  font-size: 3.125em;
   line-height: 1;
+  max-width: 600px;
+  text-align: center;
 }
 
 .hero-overline {
