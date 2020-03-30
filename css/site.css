@@ -1243,10 +1243,6 @@ a {
   align-items: stretch;
 }
 
-.flowb {
-  font-weight: 600;
-}
-
 .title-wrap.flex-centre {
   display: -webkit-box;
   display: -webkit-flex;
