@@ -70,6 +70,10 @@ canvas {
   color: #47C6BA;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .notification {
   background-color: #008F8E;
   display: -webkit-box;
