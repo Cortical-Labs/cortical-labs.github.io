@@ -320,6 +320,12 @@ a {
   background-image: url('../images/pics/bottom-left2x.jpg'), url('../images/pics/bottom-right2x.jpg');
 }
 
+.team-header {
+  background-image: url('../images/pics/team-photo2x.jpg');
+  background-size: cover;
+  width: 100%;
+}
+
 .h2-span {
   opacity: 0.6;
 }
