@@ -45,7 +45,13 @@ h2 {
 
 a {
   color: #fff;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: #47C6BA;
+  transition: all 200ms ease;
+}
+
+a:hover {
+  color: #47C6BA;
 }
 
 .notification {
