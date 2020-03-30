@@ -58,6 +58,14 @@ figure {
   padding: 160px 0;
 }
 
+.white {
+  color: white;
+}
+
+.turquoise {
+  color: #47C6BA;
+}
+
 .notification {
   background-color: #008F8E;
   display: -webkit-box;
@@ -357,6 +365,7 @@ figure {
 .team-header {
   background-image: url('../images/pics/team-photo2x.jpg');
   background-size: cover;
+  background-position: center center;
   width: 100%;
   min-height: 800px;  
   padding-right: 3%;
