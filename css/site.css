@@ -134,7 +134,7 @@ a {
 }
 
 .paragraph.left-align {
-  margin-bottom: 0px;
+  margin-bottom: 1em;
   text-align: left;
 }
 
@@ -213,7 +213,9 @@ a {
   margin-top: 0px;
   margin-bottom: 16px;
   color: #008F8E;
-  font-size: 0.875em;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-family: Josefin, sans-serif;
   letter-spacing: 1.5px;
 }
 
@@ -556,6 +558,57 @@ a {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.team-hero {
+  background-size: 90%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  mix-blend-mode: screen;
+  border-radius: 1000px;
+  width: 220px;
+  height: 220px;
+  border: 1px solid #252E3A;
+  margin-bottom: 24px;
+}
+
+.team-hero.andy {
+  background-image: url('../images/pics/Andy.png');
+}
+
+.team-hero.hon {
+  background-image: url('../images/pics/Hon.png');
+}
+
+.team-image {
+  background-size: 90%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  mix-blend-mode: screen;
+  border-radius: 1000px;
+  width: 180px;
+  height: 180px;
+  border: 1px solid #252E3A;
+  margin-bottom: 24px;
+}
+
+.team-image.andrew {
+  background-image: url('../images/pics/Andrew.png');
+}
+.team-image.brett {
+  background-image: url('../images/pics/Brett.png');
+}
+.team-image.laura {
+  background-image: url('../images/pics/Laura.png');
+}
+
+.team-title {
+  font-family: Josefin, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 1.125em;
 }
 
 .tabs {
@@ -1012,7 +1065,7 @@ a {
   margin-top: 0px;
   margin-bottom: 1rem;
   color: #008F8E;
-  font-size: 0.875em;
+  font-size: 1.125em;
   font-weight: 300;
   text-align: center;
   letter-spacing: 1.5px;
