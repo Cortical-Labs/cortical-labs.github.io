@@ -363,7 +363,15 @@
               }
         }
 
-        xhr.send(`{"name":"${name}","email":"${email}","message":"${message}"}`);
+        var data = {
+            name: name,
+            email: email,
+            message: message
+        }
+
+        var post_body = JSON.stringify(data);
+
+        xhr.send(post_body);
     }
   </script>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5e801f515836db7123bb369f" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
