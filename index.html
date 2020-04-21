@@ -1,268 +1,388 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151428731-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-151428731-1');
-    </script>
+  <meta charset="utf-8">
+  <title>Cortical Labs</title>
+  <meta content="Cortical Labs uses synthetic biology to merge live biological neurons with silicon to create a new hybrid-biological computer chip." name="description">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/site.css" rel="stylesheet" type="text/css">
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
 
-    <meta charset="UTF-8">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151428731-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    gtag('config', 'UA-151428731-1');
+  </script>
 
-    <title>Cortical Labs: Synthetic Intelligence</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
-    <link href="https://fonts.googleapis.com/css?family=Cantarell|Josefin+Sans&display=swap" rel="stylesheet">
-
-    <style type="text/css">
-        body {
-            margin: 0;
-            width: 100vw;
-            height: 100vh;
-            font-family: 'Cantarell', sans-serif;
-            /* background: black; */
-            background: linear-gradient(45deg, #69A800, #00A89E);
-        }
-
-        #container {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        #banner {
-            display: flex;
-            flex-grow: 1;
-            flex-direction: column;
-            padding: 0 36px;
-        }
-
-        #logo {
-            flex-grow: 2;
-            display: flex;
-            justify-content: center;
-        }
-
-        #logo svg {
-            width: 25vh;
-            max-width: 80%;
-        }
-
-        #header {
-            flex-grow: 3;
-            display: flex;
-            flex-direction: column;
-        }
-
-        h1 {
-            color: #fff;
-            font-size: 16pt;
-            letter-spacing: 1.6pt;
-            text-transform: uppercase;
-            font-family: 'Josefin Sans', sans-serif;
-            font-weight: 700;
-            margin-bottom: 4px;
-        }
-
-        h2 {
-            color: #fff;
-            font-size: 14pt;
-            letter-spacing: 1.4pt;
-            text-transform: uppercase;
-            font-family: 'Josefin Sans', sans-serif;
-            font-weight: 400;
-            margin-top: 4px;
-        }
-
-        form {
-            display: flex;
-            color: #fff;
-            flex-direction: column;
-        }
-
-        #mc_form {
-            color: #fff;
-        }
-
-        #MERGE0 {
-            display: block;
-            height: 22px;
-            padding: 8px;
-        }
-
-        ::placeholder {
-            font-family: 'Cantarell', sans-serif;
-            font-weight: 200;
-            color: #606060;
-        }
-
-        #submit {
-            color: #fff;
-            background: none;
-            border: 0;
-            outline: 3px solid #fff;
-            padding: 12px 6px 8px;
-            margin: 16px 2px;
-            align-self: flex-end;
-            text-transform: uppercase;
-            font-family: 'Josefin Sans', sans-serif;
-            font-weight: 700;
-            transition: color, outline, 0.5s;
-        }
-
-        #submit:hover {
-            color: #ccc;
-            outline: 3px solid #ccc;
-            cursor: pointer;
-            transition: color, outline, 0.5s;
-        }
-
-        #footer {
-            color: #fff;
-            flex-shrink: 1;
-            text-align: center;
-            justify-content: center;
-            font-size: 8pt;
-            margin-bottom: 12px;
-        }
-
-        #footer span {
-            display: block;
-        }
-
-        #footer a {
-            color: #fff;
-        }
-
-        @media (min-width: 667px) {
-            #logo {
-                flex-grow: 3;
-            }
-
-            #logo svg {
-                width: 50%;
-                max-width: 33vh;
-            }
-            
-            #header {
-                justify-content: center;
-                flex-grow: 2;
-            }
-
-            #banner {
-                flex-direction: row;
-            }
-        }
-
-        @media (min-width: 667px) and (orientation: portrait) {
-            #logo {
-                flex-grow: 1;
-            }
-
-            #logo svg {
-                width: 25vh;
-            }
-
-            #banner {
-                flex-direction: column;
-            }
-
-            #header {
-                justify-content: start;
-            }
-        }
-
-        
-/* 
-        @media (min-width: 992px) {}
-
-        @media (min-width: 1200px) {} */
-    </style>
 </head>
-
 <body>
-    <div id="container">
-        <div id="banner">
-            <div id="logo">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 100">
-                    <defs>
-                        <style>
-                            .cls-1 {
-                                fill: #fff;
-                            }
-                        </style>
-                    </defs>
-                    <title>Logo</title>
-                    <g id="Layer_2" data-name="Layer 2">
-                        <g id="Layer_1-2" data-name="Layer 1">
-                            <path class="cls-1"
-                                d="M10.08,81.72a7.32,7.32,0,0,1-2.64.46,7.72,7.72,0,0,1-4-1A6.75,6.75,0,0,1,.89,78.52,7.76,7.76,0,0,1,0,74.84a8.52,8.52,0,0,1,.89-3.93,6.6,6.6,0,0,1,2.5-2.68,7.1,7.1,0,0,1,3.71-1,8,8,0,0,1,2.46.35,8.83,8.83,0,0,1,2,.89l-1.13,2.72A5.26,5.26,0,0,0,7.2,70a3.8,3.8,0,0,0-2.08.62,4.45,4.45,0,0,0-1.55,1.67A4.89,4.89,0,0,0,3,74.68a5.35,5.35,0,0,0,.53,2.47,4,4,0,0,0,1.53,1.66,4.38,4.38,0,0,0,2.32.59,5.09,5.09,0,0,0,1.92-.34,4.15,4.15,0,0,0,1.35-.83l1.19,2.58A6.25,6.25,0,0,1,10.08,81.72Z" />
-                            <path class="cls-1"
-                                d="M17.6,71a7.6,7.6,0,0,1,2.72-2.74,7.29,7.29,0,0,1,7.44,0A7.82,7.82,0,0,1,30.5,71a7.29,7.29,0,0,1,0,7.44,7.73,7.73,0,0,1-2.74,2.71,7.44,7.44,0,0,1-7.45,0,7.49,7.49,0,0,1-2.71-2.71,7.42,7.42,0,0,1,0-7.44Zm2.58,6a4.49,4.49,0,0,0,1.65,1.7,4.35,4.35,0,0,0,2.31.62,4.13,4.13,0,0,0,2.24-.62A4.53,4.53,0,0,0,28,77.09a5.11,5.11,0,0,0,0-4.73,4.54,4.54,0,0,0-1.62-1.69,4.4,4.4,0,0,0-4.54,0,4.54,4.54,0,0,0-1.62,1.69,4.91,4.91,0,0,0-.59,2.38A4.69,4.69,0,0,0,20.18,77.08Z" />
-                            <path class="cls-1"
-                                d="M45,82,42,77.38H40.05V82H37.17V67.42h4.42a6.19,6.19,0,0,1,4.22,1.32,4.55,4.55,0,0,1,1.5,3.6,5.72,5.72,0,0,1-.57,2.53A4.22,4.22,0,0,1,45,76.73L48.4,82Zm-5-7.42h2a2,2,0,0,0,1.71-.68,2.4,2.4,0,0,0,.53-1.48,2.78,2.78,0,0,0-.46-1.52,1.92,1.92,0,0,0-1.76-.72H40.05Z" />
-                            <path class="cls-1" d="M62.1,67.42V70.2H58.55V82H55.68V70.2H52.26V67.42Z" />
-                            <path class="cls-1" d="M70.53,67.42V82H67.66V67.42Z" />
-                            <path class="cls-1"
-                                d="M86.26,81.72a7.29,7.29,0,0,1-2.64.46,7.66,7.66,0,0,1-4-1,6.62,6.62,0,0,1-2.58-2.67,7.64,7.64,0,0,1-.89-3.68,8.39,8.39,0,0,1,.89-3.93,6.54,6.54,0,0,1,2.5-2.68,7.07,7.07,0,0,1,3.71-1,8.13,8.13,0,0,1,2.46.35,9,9,0,0,1,2,.89L86.6,71.23A5.31,5.31,0,0,0,83.38,70a3.83,3.83,0,0,0-2.08.62,4.43,4.43,0,0,0-1.54,1.67,4.79,4.79,0,0,0-.58,2.35,5.35,5.35,0,0,0,.54,2.47,3.94,3.94,0,0,0,1.52,1.66,4.4,4.4,0,0,0,2.32.59,5.11,5.11,0,0,0,1.93-.34,4.15,4.15,0,0,0,1.35-.83L88,80.81A6.19,6.19,0,0,1,86.26,81.72Z" />
-                            <path class="cls-1"
-                                d="M100.9,79.17H96.06L94.87,82H92l6.59-15.17h.16L105.36,82H102Zm-1-2.42L98.54,73.2l-1.47,3.55Z" />
-                            <path class="cls-1" d="M113.14,67.42V79.25H120V82h-9.74V67.42Z" />
-                            <path class="cls-1" d="M38.93,88.4v10h5.84v1.49H37.39V88.4Z" />
-                            <path class="cls-1"
-                                d="M56.13,96.86H51.72l-1.22,3H49l5-11.94h.09l5,11.94H57.32Zm-.52-1.33L54,91.34l-1.7,4.19Z" />
-                            <path class="cls-1"
-                                d="M70.76,95a2.54,2.54,0,0,1,.57,1.64,2.91,2.91,0,0,1-1.93,2.88,5,5,0,0,1-1.89.34H64.1V88.4h3a4.48,4.48,0,0,1,2.73.72,2.53,2.53,0,0,1,1,2.17,3,3,0,0,1-.4,1.58,2.79,2.79,0,0,1-1.15,1A3.71,3.71,0,0,1,70.76,95Zm-5.13-1.59h1.75a1.7,1.7,0,0,0,1.34-.51,1.89,1.89,0,0,0,.45-1.3,1.57,1.57,0,0,0-.54-1.31,2.39,2.39,0,0,0-1.5-.42h-1.5ZM69.09,98a1.49,1.49,0,0,0,.65-1.32,1.44,1.44,0,0,0-.7-1.33,3.19,3.19,0,0,0-1.71-.43h-1.7v3.54h1.81A2.82,2.82,0,0,0,69.09,98Z" />
-                            <path class="cls-1"
-                                d="M81.39,89.91a4.53,4.53,0,0,0-1.32-.21,2.39,2.39,0,0,0-1.48.42A1.39,1.39,0,0,0,78,91.27a1.37,1.37,0,0,0,.65,1.17,8.39,8.39,0,0,0,1.83.9A8.13,8.13,0,0,1,82,94a2.93,2.93,0,0,1,1,1,3.13,3.13,0,0,1,.41,1.67A3.09,3.09,0,0,1,83,98.4a3.17,3.17,0,0,1-1.31,1.17,4.32,4.32,0,0,1-2,.43,6.17,6.17,0,0,1-2.05-.34,7,7,0,0,1-1.73-.87l.68-1.22a5.6,5.6,0,0,0,1.42.76,4.54,4.54,0,0,0,1.54.31,2.76,2.76,0,0,0,1.61-.48,1.61,1.61,0,0,0,.69-1.41,1.55,1.55,0,0,0-.58-1.26,6,6,0,0,0-1.63-.88A14.39,14.39,0,0,1,78,93.89a3.25,3.25,0,0,1-1.1-1,2.46,2.46,0,0,1-.46-1.53,2.75,2.75,0,0,1,.94-2.18,3.73,3.73,0,0,1,2.45-.88,6.71,6.71,0,0,1,3.45.92l-.59,1.19A7,7,0,0,0,81.39,89.91Z" />
-                            <path class="cls-1"
-                                d="M94,7l.66-1.82-17.33,10-.9.52.35,1a12,12,0,1,1-2.18-3.77l.67.79.9-.52L95.84,1.82,96.5,0h0l-21,12.12a13.21,13.21,0,1,0-10,21.78A13.2,13.2,0,0,0,77.9,16.28Z" />
-                            <path class="cls-1"
-                                d="M65.45,11a9.66,9.66,0,0,0,0,19.31,9.66,9.66,0,0,0,8.35-14.48A9.69,9.69,0,0,0,65.45,11ZM69.66,28a8.3,8.3,0,0,1-4.19,1.13A8.41,8.41,0,1,1,69.66,28Z" />
-                            <path class="cls-1"
-                                d="M48.24,19.39c0-.51.1-1.31.14-1.9a.68.68,0,0,0-.73-.75c-1.49.12-4.5.64-4.26,2.89.09.78.2,1.89.28,2.85a11.23,11.23,0,0,1-1,4.54,11.2,11.2,0,0,1-1.9,4.25c-.88,1-2.52,1.51-3.93,2.55a35.39,35.39,0,0,1-3.74,2.65C31,37.71,31.16,38.07,29,39.3s-2.27,1-4.41,2.27a2.3,2.3,0,0,0-.68,3.33,2.78,2.78,0,0,0,3.7.72c1.62-1,1.66-1.33,3.61-2.46,2.15-1.24,2-1.42,4.18-2.66a32.14,32.14,0,0,1,4.28-1.74,19.38,19.38,0,0,1,4.41-1.07,12.37,12.37,0,0,1,4.47-.22,11.47,11.47,0,0,1,4.24,1.59c.74.48,1.08.68,2.29,1.38,2.31,1.35,3.79-.8,4.39-2a.68.68,0,0,0-.37-1c-.46-.17-1.05-.39-1.41-.57a18,18,0,0,1-4.4-3.06,18.65,18.65,0,0,1-3-4.39,18.48,18.48,0,0,1-2.25-4.79C47.69,23,48.11,21.14,48.24,19.39Z" />
-                        </g>
-                    </g>
-                </svg>
-            </div>
-
-
-            <div id="header">
-                <h1>Synthetic Intelligence</h1>
-                <h2>Coming 2020</h2>
-
-                <div id="mc_form">
-                    Subscribe for updates
-                    <form action="https://corticallabs.us19.list-manage.com/subscribe/post" method="POST">
-                        <input type="hidden" name="u" value="ae9059579f85a1c5bd5da0bc3">
-                        <input type="hidden" name="id" value="118bdd6321">
-
-                        <input id="MERGE0" type="email" placeholder="Email address" name="MERGE0">
-                        <input id="submit" type="submit" value="Subscribe">
-                    </form>
-                </div>
-            </div>
-
-
-
+  <a name="home"></a>
+  <!-- <aside class="notification">
+    <div class="container">
+      Happy Friday, and welcome to the new Cortical Labs site! Read the <a href="#" target="_blank" class="nav-button w-button">Letter from the founders</a>
+    </div>
+  </aside> -->
+  <header class="header">    
+    <div data-collapse="medium" data-animation="default" data-duration="400" class="nav-bar w-nav">
+      <div class="nav-container w-container"><a href="#" class="w-nav-brand"><img src="images/logo.svg" width="220" alt="Cortical Labs"></a>
+        <nav role="navigation" class="nav-menu w-nav-menu">
+          <a href="#home" class="nav-link w-nav-link">Home</a>
+          <a href="#team" class="nav-link w-nav-link">Team</a>
+          <a href="#contact" class="nav-link w-nav-link">Contact</a>          
+          <a href="https://medium.com/@cortical_labs" target="_blank" class="nav-link w-nav-link">Blog</a>
+          <!-- <a href="#" target="_blank" class="nav-button w-button">Clone now</a> -->
+        </nav>
+        <div class="menu-button w-nav-button">
+          <div class="icon w-icon-nav-menu"></div>
         </div>
+      </div>
+    </div>
+    <div class="container-flex">
+      <h5 class="hero-overline">Biological computing</h5>
+      <h1 class="hero-h1">A new breed of computer chip</h1>
+      <p class="hero-paragraph">Live biological neurons integrated with traditional silicon&nbsp;computing</p>
+      <a href="#contact" target="_blank" class="hero-button w-button">Get in touch</a>
+    </div>
+    <div class="hero-image-wrapper">
+      <img src="images/BCI-REV-C.gif" width="300" alt="3D render of a Brain Chip" class="hero-image-placeholder">
+    </div>
+  </header>
 
+  <!-- About -->
+  <div class="about-section">
+    <div class="container-flex">
+      <div class="title-wrap">
+        <img class="content-h2" width="160px" src="images/logo-vertical.svg" alt="Cortical Labs">
+      </div>
+      <p class="paragraph-large">Cortical Labs is building a new generation of biological computer chips. We're a new biotech startup backed by Blackbird Ventures, based in Melbourne, Australia.</p>
+      <p class="hero-paragraph">Cortical Labs is actively seeking collaboration and partnerships.</p>
+      <a href="http://eepurl.com/gHYz5f" target="_blank" class="hero-button w-button">Join our mailing list</a>
+     
+    </div>
+    <div class="divider"></div>
+  </div>
 
-        <div id="footer">
-            © 2019 CCLabs Pty Ltd
-            <span><a href="privacy.pdf">Privacy Policy</a></span>
+  <!-- Why -->
+  <div class="why-section">
+    <div class="container-flex left-align">
+      <div class="title-wrap">
+        <h2 class="content-h2">Why <span class="h2-span">biological computing?</span></h2>
+      </div>
+      <div class="services-grid">
+        <a href="#" class="services-grid-block w-inline-block">
+          <div class="icon-block"><img src="images/icon-water.svg" alt=""></div>
+          <div class="service-title">Fluid Intelligence</div>
+          <p class="service-paragraph">Biological neural networks can solve problems in unfamiliar situations — independent of acquired knowledge — due to their self-organizating properties.</p>
+          <p class="service-paragraph">Fluid intelligence is an essential requirement for autonomous robotics.</p>
+        </a>
+        <a href="#" class="services-grid-block-02 w-inline-block">
+          <div class="icon-block"><img src="images/icon-redirect.svg" alt=""></div>
+          <div class="service-title">Robust</div>
+          <p class="service-paragraph">Unlike digital circuits, biological networks are robust to physical damage.</p> 
+          <p class="service-paragraph">Their capacity to adapt and reorganise could maintain functionality where traditional circuits would fail.</p>
+          </a>
+        <a href="#" class="services-grid-block-03 w-inline-block">
+          <div class="icon-block"><img src="images/icon-copy.svg" alt=""></div>
+          <div class="service-title">Scalable</div>
+          <p class="service-paragraph">Biological intelligence is scalable from dragon flies to humans.</p>
+          <p class="service-paragraph">Grow neurons without the need for absolute-zero facilities or expensive nano-scale fabrication units.</p>
+        </a>
+        <a href="#" class="services-grid-block-04 w-inline-block">
+          <div class="icon-block"><img src="images/icon-flash.svg" alt=""></div>
+          <div class="service-title">Power Efficient</div>
+          <p class="service-paragraph">The human brain has over a billion neurons and is capable of generalised intelligence sipping only 20 watts of power.</p> 
+          <p class="service-paragraph">Biological computing is the new frontier of computational power efficiency.</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pics 1 -->
+  <div class="pics-section">
+    <!-- No content -->
+  </div>
+
+  <!--
+  <div class="features-section"><img src="images/Left-Blur2x.png" width="424" srcset="images/Left-Blur2x-p-500.png 500w, images/Left-Blur2x-p-800.png 800w, images/Left-Blur2x-p-1080.png 1080w, images/Left-Blur2x.png 1244w" sizes="(max-width: 479px) 100vw, 424px" alt="" class="left-blur">
+    <div class="container-flex">
+      <div class="title-wrap">
+        <h2 class="content-h2 content-h2-centre">Build products with <span class="h2-span">impact</span></h2>
+        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum, tellus sed imperdiet sodales, dui diam accumsan lorem</p>
+      </div>
+      <div class="feature-wrap">
+        <div class="feature-column-content">
+          <div class="content-block">
+            <div class="overline">CUSTOM SECTIONS</div>
+            <h2 class="content-h2">Perfect base template<br>for creatives &amp; startups</h2>
+            <p class="paragraph left-align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum, tellus sed imperdiet sodales, dui diam accumsan lorem</p>
+          </div>
         </div>
+        <div class="feature-column-image">
+          <div class="feature-image-div"><img src="images/dashboard-01.svg" alt="" class="feature-image"><img src="images/brush-3.svg" alt="" class="ribbon"></div>
+        </div>
+      </div>
+      <div class="feature-wrap reverse-wrap">
+        <div class="feature-column-content">
+          <div class="content-block">
+            <div class="overline">CUSTOM SECTIONS</div>
+            <h2 class="content-h2">Or just clone individual sections / elements.</h2>
+            <p class="paragraph left-align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum, tellus sed imperdiet sodales, dui diam accumsan lorem</p>
+          </div>
+        </div>
+        <div class="feature-column-image">
+          <div class="feature-image-div"><img src="images/dashboard-02.svg" alt="" class="feature-image"><img src="images/brush-4.svg" alt="" class="ribbon-2"></div>
+        </div>
+      </div>
+      <div class="feature-wrap">
+        <div class="feature-column-content">
+          <div class="content-block">
+            <div class="overline">CUSTOM SECTIONS</div>
+            <h2 class="content-h2">Change type, colour,<br>layouts and own the design.</h2>
+            <p class="paragraph left-align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum, tellus sed imperdiet sodales, dui diam accumsan lorem</p>
+          </div>
+        </div>
+        <div class="feature-column-image">
+          <div class="feature-image-div"><img src="images/dashboard-03.svg" alt="" class="feature-image"><img src="images/brush-5.svg" alt="" class="ribbon-3"></div>
+        </div>
+      </div>
+    </div><img src="images/Right-Blur.png" width="424" srcset="images/Right-Blur-p-500.png 500w, images/Right-Blur.png 591w" sizes="(max-width: 479px) 100vw, 424px" alt="" class="right-blur"></div>
+  <div class="cta-section">
+    <div class="container">
+      <div class="newsletter-block">
+        <div class="overline">CUSTOM SECTIONS</div>
+        <h2 class="content-cta">Build better on webflow with <a href="http://flowbase.co" target="_blank" class="link">flowbase.co</a></h2>
+        <div class="form-block w-form">
+          <div class="w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="w-form-fail">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+        </div>
+        <img src="images/brush-5.svg" alt="" class="ribbon-3"><img src="images/brush-4.svg" alt="" class="ribbon-2"></div>
+    </div>
+  </div> -->
+  
+
+  <!-- Our vision -->
+  <div class="testimonials-section">
+    <div class="container-flex">
+      <h2 class="content-h2 content-h2-centre">Our vision</h2>
+      <p class="hero-paragraph">"What if you had a computer chip that could self-organise and restructure itself to best solve a problem?"</p>
+      <a href="https://medium.com/@cortical_labs/letter-from-the-founders-d5248b5a064d" target="_blank" class="hero-button w-button">Letter from the founders</a>
+      <div class="divider"></div>
+        <a href="http://spikestream.corticallabs.com" target="_blank" style="margin:24px;"><img src="images/spike-detector.gif" /></a>
+        <small class="italic">Click above to be taken to the SpikeStream Neural Visualiser</small>
+        <p class="paragraph-large">Spike visualisor showing real-time neural network activations</p>
+    </div>
+  </div> 
+
+  <!-- Pictures section 2 -->
+  <div class="pics-section2">
+    <!-- No content -->
+  </div>
+
+  <!-- Perfusion circuit -->
+  <div class="cta-section">
+    <div class="container-flex">
+      <h2 class="content-h2 content-h2-centre">Perfusion circuit</h2>
+      <canvas id="perfusion"></canvas>
+      <small class="italic">Click, drag or zoom with a mouse or your finger</small>
+      <p class="paragraph-large">We're developing techniques to stimulate and cultivate neuron growth for computation.</p>
+    </div>
+  </div>
+
+  <!-- Teams section -->
+  <a name="team"></a>
+  <div class="team-header">
+    <h2 class="content-h2 content-h2-centre">Our team</h2>
+  </div>
+  <div class="pricing-section">    
+    <div class="container-flex">
+      <div class="feature-wrap">
+        <div class="feature-column-content">
+          <div class="content-block">
+            <div class="team-hero hon"></div>
+            <h3 class="content-h2">Hon Weng Chong, MD</h3>
+            <div class="overline">FOUNDER &amp; CEO</div>            
+            <p class="paragraph left-align">Hon is an experienced startup founder with an entrepreneurial spirit grounded in medical and technical expertise. Previously he was founder and CTO of CliniCloud, a medical hardware startup with rave reviews from clinicians.</p>
+            <p class="paragraph left-align">A licensed medical doctor and software engineer who studied at Johns Hopkins Department of Informatics, he leverages his extensive experience and multi-disciplinary background to foster collaboration between the fields of biology and computer science.</p>
+            <p class="paragraph left-align"><a href="https://www.linkedin.com/in/hochong/" target="_blank">LinkedIn</a> &bull; <a href="https://twitter.com/dr1337" target="_blank">Twitter</a></p>
+          </div>
+        </div>
+        <div class="feature-column-image">
+          <div class="content-block">
+            <div class="team-hero andy"></div>
+            <h3 class="content-h2">Andy Kitchen</h3>
+            <div class="overline">FOUNDER &amp; CTO</div>            
+            <p class="paragraph left-align">A computer scientist, researcher and software engineer whose work history includes on-the-ground experience at three high-tech startups. Andy also spearheaded the first technical team providing Deep Learning consultancy in Melbourne.</p>
+            <p class="paragraph left-align">Andy has published several peer-reviewed papers on artificial intelligence. He’s a long-time community organizer and founder of the highly respected Melbourne ML/AI Meetup, which has with over 6,000 members.</p>
+            <p class="paragraph left-align"><a href="https://www.linkedin.com/in/andy-kitchen/" target="_blank">LinkedIn</a> &bull; <a href="https://twitter.com/auastro" target="_blank">Twitter</a></p> 
+          </div>
+        </div>
+      </div>
+      <!-- <div class="title-wrap flex-centre">
+        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum, <br>tellus sed imperdiet sodales, dui diam accumsan lorem</p>        
+      </div> -->
+      
+      <div class="w-layout-grid pricing-grid">
+        <!-- Andrew -->
+        <article class="title-wrap flex-centre">
+            <div class="team-image andrew"></div>
+            <div class="team-title">Andrew Doherty</div>
+            <div class="overline">CHIEF HARDWARE ENGINEER</div>
+            <p class="paragraph"><a href="https://www.linkedin.com/in/andrew-doherty-48219466/" target="_blank">LinkedIn</a></p>
+        </article>
+        <!-- Brett -->
+        <article class="title-wrap flex-centre">
+          <div class="team-image brett"></div>
+          <div class="team-title">Brett Kagan PhD</div>
+          <div class="overline">CHIEF SCIENTIFIC OFFICER</div>
+          <p class="paragraph"><a href="https://www.linkedin.com/in/brett-kagan-6ba996146/" target="_blank">LinkedIn</a></p>
+        </article>
+        <!-- Laura -->
+        <article class="title-wrap flex-centre">
+          <div class="team-image laura"></div>
+          <div class="team-title">Laura Summers</div>
+          <div class="overline">LEAD DESIGNER</div>
+          <p class="paragraph"><a href="https://www.linkedin.com/in/summerscope/" target="_blank">LinkedIn</a> &bull; <a href="https://twitter.com/summerscope" target="_blank">Twitter</a></p>  
+        </article>
+      </div>
+    </div>
+    <!-- <img src="images/Left-Blur2x.png" width="424" srcset="images/Left-Blur2x-p-500.png 500w, images/Left-Blur2x-p-800.png 800w, images/Left-Blur2x-p-1080.png 1080w, images/Left-Blur2x.png 1244w" sizes="(max-width: 479px) 100vw, 424px" alt="" class="left-blur"> -->
+  </div>
+  <a name="contact"></a>
+  <div id="contact" class="contact-section">
+    <div class="w-layout-grid">
+      <section class="form title-wrap">
+        
+        <h2 class="content-h2">Contact us</h2>
+        <p class="paragraph left-align">Get in touch to discuss partnership, collaboration or investment opportunities.</p>
+        <div class="contact-form">
+          <input type="text" id="name" placeholder="Name" />
+          <input type="email" id="email" placeholder="Email" />
+          <textarea type="text" id="message" placeholder="Message"></textarea>
+          <input type="submit" value="Send message" data-wait="Please wait..." class="send-button w-button" onclick="contactUs()">
+        </div>
+        <div class="w-form-done">
+          <div>Thank you! Your submission has been received!</div>
+        </div>
+        <div class="w-form-fail">
+          <div>Oops! Something went wrong while submitting the form.</div>
+        </div>
+      </section>
+      <section class="feature-image title-wrap">
+      </section>
     </div>
 
+  </div>
 
+  <!-- Footer -->
+  <div class="footer-section">
+    <div class="container-flex left-align">
+      <div class="footer-content">
+        <div class="footer-left-block">
+          <a href="#" class="w-inline-block">
+            <img src="images/logomark.svg" width="120px" alt="" class="footer-logo">
+          </a>
+          <br>&nbsp;<br>
+          <p class="paragraph left-align">Join our <a href="http://eepurl.com/gHYz5f" target="_blank">mailing list</a></p>
+          <p class="paragraph left-align">Email <span class="white">info</span> <span class="turquoise">at</span> <span class="white">corticallabs</span> <span class="turquoise">dot</span> <span class="white">com</span></p>
+          <p class="paragraph left-align">Read our <a href="privacy.pdf" target="_blank">privacy policy</a></p>
+        </div>
+        <div class="footer-right-block">
+          <div class="footer-link-block"></div>
+          <div class="footer-link-block"></div>
+          <div class="footer-link-block">
+            <div class="footer-title">Jump to</div>              
+              <a href="#home" class="footer-link">Home</a>
+              <a href="#contact" class="footer-link">Contact</a>
+              <a href="#team" class="footer-link">Team</a>
+              <a href="https://medium.com/@cortical_labs" target="_blank" class="footer-link">Blog</a>
+            </div>
+          <div class="footer-link-block">
+            <div class="footer-title">Social</div>
+              <a href="https://www.linkedin.com/company/cclabs-ai/about/" target="_blank" class="footer-link">LinkedIn</a>
+              <a href="https://twitter.com/CorticalLabs" target="_blank" class="footer-link">Twitter</a>
+              <a href="https://medium.com/@cortical_labs" target="_blank" class="footer-link">Medium</a>
+              <a href="https://www.youtube.com/channel/UCq4mqLeGRdq47sHumYMIDJw" target="_blank" class="footer-link">Youtube</a>
+              
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-base">
+    <div class="footer-base-container">
+      <div class="copyright white">Copyright © 2020 <a href="https://corticallabs.com" target="_blank">Cortical Labs</a>. All rights reserved.</div>
+      <div class="social-media-block">
+        <a href="https://medium.com/@cortical_labs" class="social-link-block w-inline-block"><img src="images/social-medium.svg" alt="medium" class="social-icon"></a>
+        <a href="https://twitter.com/corticallabs" class="social-link-block w-inline-block"><img src="images/social-twitter.svg" alt="twitter" class="social-icon"></a>
+        <a href="https://www.linkedin.com/company/cclabs-ai/about/" class="social-link-block w-inline-block"><img src="images/social-linkedin.svg" alt="linkedin" class="social-icon"></a>
+        <a href="https://www.youtube.com/channel/UCq4mqLeGRdq47sHumYMIDJw" class="social-link-block w-inline-block"><img src="images/social-youtube.svg" alt="youtube" class="social-icon"></a>
+        <a href="https://facebook.com/Cortical-Labs-101229794846255" class="social-link-block w-inline-block"><img src="images/social-facebook.svg" alt="facebook" class="social-icon"></a>
+        <a href="https://www.instagram.com/corticallabs/" class="social-link-block w-inline-block"><img src="images/social-instagram.svg" alt="instagram" class="social-icon"></a>
+      </div>
+    </div>
+  </div>
+  <!-- Contact form script -->
+  <script>
+    function contactUs() {
+        console.log('Sending Email')
+
+        var name = document.getElementById("name").value
+        var email = document.getElementById("email").value
+        var message = document.getElementById("message").value
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", 'https://8aodvrazea.execute-api.ap-southeast-2.amazonaws.com/default/contact_us', true);
+
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+        xhr.onreadystatechange = function () { // Call a function when the state changes.
+            if (this.readyState === XMLHttpRequest.DONE) {
+                // Request finished. Do processing here.
+                console.log('Submission Complete')
+
+                if (this.status === 200) {
+                  let confirmation = document.getElementsByClassName("w-form-done")[0]
+                  confirmation.style.display = "block"
+                } else {
+                  let confirmation = document.getElementsByClassName("w-form-fail")[0]
+                  confirmation.style.display = "block"
+                }
+              }
+        }
+
+        var data = {
+            name: name,
+            email: email,
+            message: message
+        }
+
+        var post_body = JSON.stringify(data);
+
+        xhr.send(post_body);
+    }
+  </script>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5e801f515836db7123bb369f" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  
+  <script src="js/three.js"></script>
+  <script src="js/OrbitControls.js"></script>
+  <script src="js/GLTFLoader.js"></script>
+  <script src="js/DRACOLoader.js"></script>
+  <script src="js/perfusion.js"></script>
+
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
 </body>
-
-</body>
-
 </html>
